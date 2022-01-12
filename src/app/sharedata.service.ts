@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import{BehaviorSubject, interval, Observable} from 'rxjs';
+import{BehaviorSubject} from 'rxjs';
 import Swal from 'sweetalert2';
 
 
@@ -20,7 +20,7 @@ timeLeft=new BehaviorSubject<any>([]);
 
   shareData(){
 
-    this.count--;
+    this.count++;
     this.myPoints.next(this.count)
 
 
@@ -33,22 +33,6 @@ mycountstop:any;
 
 
 getStart(){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   this.mycountstop= setInterval(() =>{
     this.numbercount --;
     this.timeLeft.next(this.numbercount);

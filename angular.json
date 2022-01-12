@@ -127,9 +127,9 @@
         "deploy": {
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
-            "outputPath": "dist/ddcv",
-            "netlifyToken": "5nJTDfKu7wFJSaCRw7hGw5ydvviP6foMlrDoh3plCLc",
-            "siteId": "8948e809-533d-413c-aff3-e993573204ca"
+            "outputPath": "dist/",
+            "netlifyToken": "tzLwxqXgC5omOIWiDzWny_8uuuYLEmZj7hWSOYufd2A",
+            "siteId": "0f7acdeb-05cb-44d4-a15e-6d02c2b11ffe"
           }
         }
       }
