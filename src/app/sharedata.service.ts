@@ -43,15 +43,6 @@ getStart(){
 
 
 
-this.count --;
-this.timeLeft.next(this.numbercount);
-
-  if(this.numbercount<0){
-    this.mycountstop.unsubscribe(this.numbercount=0);
-    this.numbercount=''
-
-
-  }
 
 
 
