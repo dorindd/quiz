@@ -1,0 +1,193 @@
+
+<div class="container-fluid containerhead">
+  <div class="box">
+    <img src="./assets/img/git.png" alt="git picture"><br>
+    <i class="fa fa-clock-o icon-icon" aria-hidden="true"><span class='icon-nr'>{{nrsecounds| minute}}</span></i>
+  </div>
+  <div class="box">
+    <img src="./assets/img/html1.png" alt="html picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/css2.png" alt="css picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/js3.png" alt="javascript picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/angular.ico" alt="angular picture">
+  </div>
+</div>
+<scoregit></scoregit>
+<navbartwo></navbartwo>
+<text></text>
+<div class="container cont-cont">
+  <button class="btnbtn" (click)="getFun()"[disabled]="fun"><span class='start'>Start Git Quiz</span></button>
+  <ngb-accordion #acc="ngbAccordion" CactiveIds="ngb-panel-0">
+    <ngb-panel [disabled]="show1">
+      <ng-template ngbPanelHeader>
+        <button (click)='getStart()' ngbPanelToggle class="btn-btn">Question 1</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which Command is used to show limited number of commits?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer()'>
+        <label for="opener1">git fetch</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer()'>
+        <label for="opener2"> git config</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer()'>
+        <label for="opener3">git status</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData()'>
+        <label for="opener4">git log -n</label><br>
+        <div>
+          <div id="dialog" title="Try again">
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 2</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which command defines the author email to be used for all commits by the current user?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData1()'>
+        <label for="opener1">git config --</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer1()'>
+        <label for="opener2">git clean -f</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer1()'>
+        <label for="opener3">git merge --no-ff </label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer1()'>
+        <label for="opener4">git email--amend</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show2">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 3</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which command creates an empty Git repository in the specified directory?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer2()'>
+        <label for="opener1">git reset</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer2()'>
+        <label for="opener2">git log ..</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener3" (click)='getData2()'>
+        <label for="opener3">git init </label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer2()'>
+        <label for="opener4">git init --bare</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show3">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 4</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p> Command to download all the objects and references from a specified repository?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer3()'>
+        <label for="opener1">git config --list</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData3()'>
+        <label for="opener2">git fetch</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer3()'>
+        <label for="opener3"> git help</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer3()'>
+        <label for="opener4">git log -n</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show4">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 5</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Git command to compare two specified branches?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer4()'>
+        <label for="opener1">git push --tags</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer4()'>
+        <label for="opener2">git blame -L </label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer4()'>
+        <label for="opener3">git merge</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData4()'>
+        <label for="opener4">git diff ... </label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show5">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 6</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which Git command displays the patch representing each commit?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer5()'>
+        <label for="opener1">git branch</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer5()'>
+        <label for="opener2">git remote -v</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer5()'>
+        <label for="opener3">git log</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData5()'>
+        <label for="opener4">git log -p </label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show6">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 7</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following command line environment is used for interacting with Git ?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData6()'>
+        <label for="opener1">Git Bash </label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer6()'>
+        <label for="opener2"> GitHub</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer6()'>
+        <label for="opener3">Git Boot</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer6()'>
+        <label for="opener4">Git Lab</label><br>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show7">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 8</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p> If you want to make radical changes to your team’s project and don’t want to impact the rest of the team,
+          you should implement your changes in -?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer7()'>
+        <label for="opener1">the root</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer7()'>
+        <label for="opener3">a tag</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer7()'>
+        <label for="opener4">the trunk</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData7()'>
+        <label for="opener2">None of the above</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show8">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 9</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>The Git clone command does which of the following?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer8()'>
+        <label for="opener1">Makes a local copy of the repository</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer8()'>
+        <label for="opener2">Creates a working directory</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer8()'>
+        <label for="opener3">Commits a new branch</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData8()'>
+        <label for="opener4"> Both 1 & 2</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show9">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 10</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of these Git client commands creates a copy of the repository and a working directory in the client’s
+          workspace?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer9()'>
+        <label for="opener1">checkout</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData9()'>
+        <label for="opener2">clone</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer9()'>
+        <label for="opener3"> import</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer9()'>
+        <label for="opener4">update</label><br>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

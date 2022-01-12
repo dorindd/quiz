@@ -1,0 +1,191 @@
+
+<div class="container-fluid containerhead">
+    <div class="box">
+      <img src="./assets/img/git.png" alt="git picture">
+    </div>
+    <div class="box">
+      <img src="./assets/img/html1.png" alt="html picture">
+    </div>
+    <div class="box">
+      <img src="./assets/img/css2.png" alt="css picture">
+    </div>
+    <div class="box">
+      <img src="./assets/img/js3.png" alt="javascript picture">
+    </div>
+    <div class="box">
+      <img  src="./assets/img/angular.ico" alt="angular picture"><br>
+      <i class="fa fa-clock-o icon-icon" aria-hidden="true"><span class='icon-nr'>{{nrsecounds| minute}}</span></i>
+    </div>
+  </div>
+  <scoreangular></scoreangular>
+  <navbartwo></navbartwo>
+  <text></text>
+  <div class="container cont-cont">
+  <button class="btnbtn" (click)="getFun()"[disabled]="fun"><span class="start">Start Angular Cli Quiz</span></button>
+  <ngb-accordion #acc="ngbAccordion" CactiveIds="ngb-panel-0">
+    <ngb-panel [disabled]="show1">
+      <ng-template ngbPanelHeader>
+        <button (click)='getStart()' ngbPanelToggle class="btn-btn">Question 1</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p> Interpolation in angular cli is done using?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer()'>
+        <label for="opener1">!!!!</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer()'>
+        <label for="opener2">{{txt3}}</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer()'>
+        <label for="opener3">{{txt2}}</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData()'>
+        <label for="opener4">{{txt1}}</label><br>
+        <div>
+          <div id="dialog" title="Try again">
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 2</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Angular Cli is a ?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData1()'>
+        <label for="opener1">Framework</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer1()'>
+        <label for="opener2">library</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer1()'>
+        <label for="opener3">Operating System</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer1()'>
+        <label for="opener4">programming Language</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show2">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 3</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which character is used for chaining multiple pipes in Angular?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer2()'>
+        <label for="opener1">:</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer2()'>
+        <label for="opener2">-</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener3" (click)='getData2()'>
+        <label for="opener3"> |</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer2()'>
+        <label for="opener4">\</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show3">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 4</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p> Which of the following filter is used to convert input to all lowercase?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer3()'>
+        <label for="opener1">lower</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData3()'>
+        <label for="opener2"> lowercase</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer3()'>
+        <label for="opener3">Both of the above</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer3()'>
+        <label for="opener4">None of the above</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show4">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 5</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>What is the decorator used for configuring your module class?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer4()'>
+        <label for="opener1">@NgApp</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer4()'>
+        <label for="opener2">@NgAngular</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer4()'>
+        <label for="opener3">@NgConfigure</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData4()'>
+        <label for="opener4"> @NgModule</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show5">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 6</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following is the correct way to apply a filter?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer5()'>
+        <label for="opener1">Property-value ||| filter</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer5()'>
+        <label for="opener2">Property-value || filter</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer5()'>
+        <label for="opener3">Property-value && filter</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData5()'>
+        <label for="opener4">Property-value | filter</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show6">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 7</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>What is used .angular-cli.json?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData6()'>
+        <label for="opener1">used to configure your angular project</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer6()'>
+        <label for="opener2">used to link external files</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer6()'>
+        <label for="opener3">used to install required project packages</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer6()'>
+        <label for="opener4">use for data binding</label><br>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show7">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 8</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following is not a hook application life cycle? </p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer7()'>
+        <label for="opener1"> ngOnChanges</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData7()'>
+        <label for="opener2">ngViewStart</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer7()'>
+        <label for="opener3">ngOnInit</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer7()'>
+        <label for="opener4"> None of above</label><br>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show8">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 9</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Router is part of which of the following module?</p>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData8()'>
+        <label for="opener4">@angular/router</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer8()'>
+        <label for="opener1"> @angular/core </label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer8()'>
+        <label for="opener3"> Both</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer8()'>
+        <label for="opener2">None of above</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show9">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 10</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>RxJS can be used for?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer9()'>
+        <label for="opener1">Browser</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer9()'>
+        <label for="opener3">Server Side</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData9()'>
+        <label for="opener2">Both</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer9()'>
+        <label for="opener4">None of above</label><br>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+  </div>

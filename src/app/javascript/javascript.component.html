@@ -1,0 +1,191 @@
+
+<div class="container-fluid containerhead">
+  <div class="box">
+    <img src="./assets/img/git.png" alt="git picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/html1.png" alt="html picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/css2.png" alt="css picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/js3.png" alt="javascript picture"><br>
+    <i class="fa fa-clock-o icon-icon" aria-hidden="true"><span class='icon-nr'>{{nrsecounds| minute}}</span></i>
+  </div>
+  <div class="box">
+    <img src="./assets/img/angular.ico" alt="angular picture">
+  </div>
+</div>
+<scorejavascript></scorejavascript>
+<navbartwo></navbartwo>
+<text></text>
+<div class="container cont-cont">
+<button class="btnbtn" (click)="getFun()"[disabled]="fun"><span class="start">Start Javascript Quiz</span></button>
+<ngb-accordion #acc="ngbAccordion" CactiveIds="ngb-panel-0">
+  <ngb-panel [disabled]="show1">
+    <ng-template ngbPanelHeader>
+      <button (click)='getStart()' ngbPanelToggle class="btn-btn">Question 1</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>What is the HTML tag under which one can write the JavaScript code?</p>
+      <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData()'>
+      <label for="opener4">{{txt1}}</label><br>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer()'>
+      <label for="opener1">{{txt2}}</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer()'>
+      <label for="opener2">{{txt3}}></label><br>
+      <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer()'>
+      <label for="opener3">{{txt4}}</label><br>
+      <div>
+        <div id="dialog" title="Try again">
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 2</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>What is the correct file extension for Javascript files?</p>
+      <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer1()'>
+      <label for="opener2">javascript</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer1()'>
+      <label for="opener3">java</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer1()'>
+      <label for="opener4">script</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData1()'>
+      <label for="opener1">js</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show2">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 3</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>JavaScript is ________ language?</p>
+      <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer2()'>
+      <label for="opener2">Translated</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener3" (click)='getData2()'>
+      <label for="opener3">an interpreted</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer2()'>
+      <label for="opener4">a compiled</label><br>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer2()'>
+      <label for="opener1"> None of the above</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show3">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 4</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Which built-in method adds one or more elements to the end of an array and returns the new length of the array?</p>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer3()'>
+      <label for="opener1">last()</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData3()'>
+      <label for="opener2"> push()</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer3()'>
+      <label for="opener3"> put()</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer3()'>
+      <label for="opener4">None of the above.</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show4">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 5</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>What is the output of below 33 == 33.0?</p>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer4()'>
+      <label for="opener1">33</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer4()'>
+      <label for="opener2">False</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData4()'>
+      <label for="opener4">True</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer4()'>
+      <label for="opener3">None of the above</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show5">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 6</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>What will this code print >>> a=10 >>> alert(a+10)</p>
+      <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData5()'>
+      <label for="opener4">20</label><br>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer5()'>
+      <label for="opener1"> a+10</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer5()'>
+      <label for="opener2">This code will raise an exception</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer5()'>
+      <label for="opener3">None of these</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show6">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 7</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>What is the output of below 13 +6 + "2"?</p>
+      <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData6()'>
+      <label for="opener1">192</label><br>
+      <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer6()'>
+      <label for="opener2">21</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer6()'>
+      <label for="opener3">19</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer6()'>
+      <label for="opener4">22</label><br>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show7">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 8</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Which built-in method reverses the order of the elements of an array?</p>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer7()'>
+      <label for="opener1">changeOrder(order)</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData7()'>
+      <label for="opener2"> reverse()</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer7()'>
+      <label for="opener3">sort(order)</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer7()'>
+      <label for="opener4">None of the above</label><br>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show8">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 9</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Which of the following is the correct syntax to print a page using JavaScript?</p>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer8()'>
+      <label for="opener1">document.print()</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer8()'>
+      <label for="opener2">navigator.print()</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer8()'>
+      <label for="opener3">browser.print()</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData8()'>
+      <label for="opener4"> window.print()</label>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel [disabled]="show9">
+    <ng-template ngbPanelHeader>
+      <button ngbPanelToggle class="btn-btn">Question 10</button>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Which of the following function of Array object joins all elements of an array into a string?</p>
+      <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer9()'>
+      <label for="opener1">concat()</label><br>
+      <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData9()'>
+      <label for="opener2">join()</label><br>
+      <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer9()'>
+      <label for="opener3">pop()</label><br>
+      <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer9()'>
+      <label for="opener4">map()</label><br>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+</div>

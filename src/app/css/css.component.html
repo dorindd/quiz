@@ -1,0 +1,191 @@
+<div class="container-fluid containerhead">
+  <div class="box">
+    <img src="./assets/img/git.png" alt="git picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/html1.png" alt="html picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/css2.png" alt="css picture"><br>
+    <i class="fa fa-clock-o icon-icon" aria-hidden="true"><span class='icon-nr'>{{nrsecounds| minute}}</span></i>
+  </div>
+  <div class="box">
+    <img src="./assets/img/js3.png" alt="javascript picture">
+  </div>
+  <div class="box">
+    <img src="./assets/img/angular.ico" alt="angular picture">
+  </div>
+</div>
+<scorecss></scorecss>
+<navbartwo></navbartwo>
+<text></text>
+<div class="container cont-cont">
+  <button class="btnbtn" (click)="getFun()" [disabled]="fun"><span class="start">Start Css Quiz</span></button>
+  <ngb-accordion #acc="ngbAccordion" CactiveIds="ngb-panel-0">
+    <ngb-panel [disabled]="show1">
+      <ng-template ngbPanelHeader>
+        <button (click)='getStart()' ngbPanelToggle class="btn-btn">Question 1</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>How do you change the text color of an element?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer()'>
+        <label for="opener1">test-color</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer()'>
+        <label for="opener2"> fgcolor</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer()'>
+        <label for="opener3">text:color</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData()'>
+        <label for="opener4">color</label><br>
+        <div>
+          <div id="dialog" title="Try again">
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 2</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>What does CSS stand for?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData1()'>
+        <label for="opener1">Cascading Style Sheets</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer1()'>
+        <label for="opener2">Computer Style Sheets</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer1()'>
+        <label for="opener3">Creative Style Sheets</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer1()'>
+        <label for="opener4">Colorful </label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show2">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 3</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which property is used in CSS to change the background color?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer2()'>
+        <label for="opener1">bgcolor</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer2()'>
+        <label for="opener2">color:</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener3" (click)='getData2()'>
+        <label for="opener3">background-color</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer2()'>
+        <label for="opener4">back-color</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show3">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 4</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following value of cursor shows it as a pointing hand?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer3()'>
+        <label for="opener1">crosshair</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData3()'>
+        <label for="opener2">pointer</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer3()'>
+        <label for="opener3">default</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer3()'>
+        <label for="opener4">move</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show4">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 5</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>How can we write comment along with CSS code?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer4()'>
+        <label for="opener1">/ a comment /</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer4()'>
+        <label for="opener2">// a comment // </label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer4()'>
+        <label for="opener3"><'a comment'></label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData4()'>
+        <label for="opener4">/* a comment */ </label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show5">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 6</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which css property you will use if you want to add some margin between a DIV's border and its inner text?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer5()'>
+        <label for="opener1">spacing</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer5()'>
+        <label for="opener2">margin</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer5()'>
+        <label for="opener3">inner-margin</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData5()'>
+        <label for="opener4">padding</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show6">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 7</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which CSS property is used to control the text size of an element?</p>
+        <input type="radio" name=" button1" value='button4' id="opener1" (click)='getData6()'>
+        <label for="opener1">font-size</label><br>
+        <input type="radio" name=" button1" value='button3' id="opener2" (click)='getAnswer6()'>
+        <label for="opener2">font-style</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer6()'>
+        <label for="opener3">text-size</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer6()'>
+        <label for="opener4">text-style</label><br>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show7">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 8</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following selector matches the name of any element type?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer7()'>
+        <label for="opener1">The Type Selector</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData7()'>
+        <label for="opener2">The Universal Selector</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer7()'>
+        <label for="opener3">The Descendant Selector</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer7()'>
+        <label for="opener4">The Class Selector</label><br>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show8">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 9</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Which of the following property is used to control the position of an image in the background?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer8()'>
+        <label for="opener1"> background-color</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener2" (click)='getAnswer8()'>
+        <label for="opener2">background-image</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener3" (click)='getAnswer8()'>
+        <label for="opener3"> background-repeat</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener4" (click)='getData8()'>
+        <label for="opener4">background-position</label>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel [disabled]="show9">
+      <ng-template ngbPanelHeader>
+        <button ngbPanelToggle class="btn-btn">Question 10</button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Suppose we want to arragnge five nos. of DIVs so that DIV4 is placed above DIV1. Now, which css property will
+          we use to control the order of stack?</p>
+        <input type="radio" name=" button1" value='button3' id="opener1" (click)='getAnswer9()'>
+        <label for="opener1">d-index</label><br>
+        <input type="radio" name=" button1" value='button4' id="opener2" (click)='getData9()'>
+        <label for="opener2">z-index</label><br>
+        <input type="radio" name=" button1" value='button1' id="opener3" (click)='getAnswer9()'>
+        <label for="opener3">x-index</label><br>
+        <input type="radio" name=" button1" value='button2' id="opener4" (click)='getAnswer9()'>
+        <label for="opener4">s-index</label><br>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

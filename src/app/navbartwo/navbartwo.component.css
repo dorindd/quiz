@@ -1,0 +1,272 @@
+.mynavbar {
+  height: 40px;
+  background: linear-gradient(#636e72 70%, #353b48 50%);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border-bottom: 1px rgba(40, 40, 40, 0.13) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+}
+nav {
+  position: relative;
+  z-index: 1;
+}
+.mycol {
+  display: flex;
+  justify-content: flex-start;
+}
+.dropbtn {
+  position: relative;
+  bottom: 0.6px;
+  width: 268px;
+  height: 28px;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+  padding: 1px;
+  letter-spacing:2px;
+  background-color: #353b48;
+  color: white;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+}
+.dropdown {
+  position: relative;
+  right: 13px;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #353B48;
+  width: 268px;
+  height: 371px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+li {
+  position: relative;
+  right: 42px;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  width: 267px;
+  height: 50px;
+  background-color: #342F7F;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.list-list{
+  border-left-color:white;
+  border-left-width: 5px;
+}
+.list1 {
+  border-left-color: red;
+  border-left-width: 5px;
+}
+.list2 {
+  border-left-color: gold;
+  border-left-width: 5px;
+}
+.list3 {
+  border-left-color: rgb(162, 0, 255);
+  border-left-width: 5px;
+}
+.list4 {
+  border-left-color: rgb(255, 0, 234);
+  border-left-width: 5px;
+}
+.list5 {
+  border-left-color: rgb(89, 0, 255);
+  border-left-width: 5px;
+}
+.list-list:hover {
+  background-color: #4A3BC7;
+  border-left-color: rgb(81, 255, 0);
+  color:cornsilk;
+}
+.list1:hover {
+  background-color: #4A3BC7;
+  color: white;
+  border-left-color: rgb(81, 255, 0);
+}
+.list1:hover::after {
+  content: 'GIT';
+  position: relative;
+  left: 60px;
+  bottom: 32px;
+  font-size: 15px;
+}
+.list2:hover {
+  background-color: #4A3BC7;
+  color: white;
+  border-left-color: rgb(81, 255, 0);
+}
+.list2:hover::after {
+  content: 'HTML';
+  position: relative;
+  left: 60px;
+  bottom: 32px;
+  font-size: 15px;
+}
+.list3:hover {
+  background-color: #4A3BC7;
+  color: white;
+  border-left-color: rgb(81, 255, 0);
+}
+.list3:hover::after {
+  content: 'CSS';
+  position: relative;
+  left: 60px;
+  bottom: 32px;
+  font-size: 15px;
+}
+.list4:hover {
+  background-color: #4A3BC7;
+  color: white;
+  border-left-color: rgb(81, 255, 0);
+}
+.list4:hover::after {
+  content: 'JAVASCRIPT';
+  position: relative;
+  left: 78px;
+  bottom: 32px;
+  font-size: 15px;
+}
+.list5:hover {
+  background-color: #4A3BC7;
+  color: white;
+  border-left-color: rgb(81, 255, 0);
+}
+.list5:hover::after {
+  content: 'ANGULAR';
+  position: relative;
+  left: 75px;
+  bottom: 32px;
+  font-size: 15px;
+}
+.list-pict {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 60px;
+  top: 10px;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid white;
+  position: relative;
+  top: 390px;
+  right: 175px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #4A3BC7;
+}
+.quiz {
+  display: flex;
+  flex-direction: row;
+}
+.para {
+  position: relative;
+  left: 70px;
+  top: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: cornsilk;
+}
+
+.myicon{
+  font-size:30px;
+  position: relative;
+  left: 65px;
+  top:8px;
+
+}
+.icon-home{
+  position: relative;
+  left: 70px;
+  top: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width:575px) {
+  .mynavbar {
+    width: 100%;
+  }
+  .dropbtn {
+    width: 130px;
+  }
+  .dropdown-content {
+    width: 130px;
+    height: 250px;
+  }
+  li {
+    width: 130px;
+    height: 30px;
+  }
+  .list-pict {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 10px;
+    top: 4px;
+  }
+  .para {
+    position: relative;
+    left: 20px;
+    top: 3px;
+    font-size: 15px;
+  }
+  .center1 {
+    position: relative;
+    top: 3px;
+  }
+  .list1:hover::after {
+    content: none;
+  }
+  .list2:hover::after {
+    content: none;
+  }
+  .list3:hover::after {
+    content: none;
+  }
+  .list4:hover::after {
+    content: none;
+  }
+  .list5:hover::after {
+    content: none;
+  }
+  .myicon{
+    font-size:20px;
+    position: relative;
+    left:10px;
+    top:4px;
+
+  }
+  .icon-home{
+    position: relative;
+    left:18px;
+    top: 4px;
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+
+}
